@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import Header from '../component/Header';
 import Question from '../component/Question';
 import { fetchAPI, fetchToken } from '../services/servicesFetchAPI';
+import play from '../images/play.png';
 
 class Play extends Component {
   constructor() {
@@ -69,6 +70,9 @@ class Play extends Component {
           nextQuestion={ this.nextQuestion }
           question={ questions[actualQuestion] }
         /> }
+        <div>
+          <img className="play-img" src={ play } alt="" />
+        </div>
       </div>
     );
   }
