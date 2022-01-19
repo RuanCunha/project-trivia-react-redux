@@ -1,59 +1,62 @@
 .main-feedback {
+  background: white;
+  border-radius: 20px;
+
   /* border: 5px solid blue;
   width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-around; */
-  width: 40%;
+  left: 50%;
   padding: 40px;
   position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgb(255, 255, 255);
   text-align: center;
-  border-radius: 20px;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  width: 40%;
 }
 
 .feedback-text {
-  width: 40%;
-  padding: 40px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgb(255, 255, 255);
-  text-align: center;
+  background: white;
   border-radius: 20px;
   color: rgb(66, 0, 87);
-  font-weight: 600;
   font-size: 1.5em;
+  font-weight: 600;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  text-align: center;
   text-transform: uppercase;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 40%;
 }
 
 .feedback-buttons-container {
+
   /* border: 5px solid red; */
   position: absolute;
-  width: 80%;
   top: 80%;
+  width: 80%;
+
   /* display: flex;
   justify-content: space-between; */
 }
 
 .feedback-buttons {
-  padding: 25px;
-  border-radius: 20px;
   background-color: purple;
+  border-radius: 20px;
   color: white;
+  padding: 25px;
 }
 
 .container {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-#ranking-btn {
+.ranking-btn {
+  background-color: rgb(143, 143, 0);
   margin-left: 73%;
-  background-color: rgb(173, 173, 0);
 }

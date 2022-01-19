@@ -18,8 +18,8 @@ export class Feedback extends Component {
             {assertions < assertionsNumber ? 'Could be better...' : 'Well Done!'}
           </p>
           <div className="main-feedback">
-            <p data-testid="feedback-total-score">{ `Score: ${score}` }</p>
-            <p data-testid="feedback-total-question">{ `Assertions: ${assertions}` }</p>
+            <p data-testid="feedback-total-score">{ score }</p>
+            <p data-testid="feedback-total-question">{ assertions }</p>
           </div>
           <div className="feedback-buttons-container">
             <button
@@ -33,8 +33,7 @@ export class Feedback extends Component {
               Play again
             </button>
             <button
-              id="ranking-btn"
-              className="feedback-buttons"
+              className="feedback-buttons ranking-btn"
               type="button"
               data-testid="btn-ranking"
               onClick={ () => {

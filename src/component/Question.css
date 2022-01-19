@@ -1,33 +1,36 @@
 .main-container {
+
   /* border: 5px solid blue; */
-  width: 70%;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  width: 70%;
 }
 
 .question-category {
-  text-align: center;
-  padding: 20px 0;
   font-weight: 600;
+  padding: 20px 0;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .question-text {
+  padding: 20px;
   text-align: center;
-  padding: 20px 20px;
 }
 
-.container-question{
+.container-question {
   background-color: aliceblue;
   border-radius: 20px;
+
   /* padding: 10px;
   margin: 10px; */
   width: 100%;
 }
 
 .container-answer {
+
   /* border: 5px solid yellow; */
   display: flex;
   flex-wrap: wrap;
@@ -35,54 +38,55 @@
 }
 
 .answers {
-  padding: 20px;
   border-radius: 10px;
   flex-basis: 48%;
-  margin: .5% .5% .5% 1%;
+  margin: 0.5% 0.5% 0.5% 1%;
+  padding: 20px;
 }
 
 .answers:hover {
-  opacity: .9;
-  background-color: rgb(255, 255, 0);
+  background-color: yellow;
+  opacity: 0.9;
 }
 
 .next-button {
-  visibility: hidden;
   border-radius: 20px;
   padding: 10px 40px;
+  visibility: hidden;
 }
 
 .correct {
-  border: 3px solid rgb(6, 240, 15);
   background-color: rgb(6, 240, 15);
-  color: rgb(255, 255, 255);
+  border: 3px solid rgb(6, 240, 15);
+  color: white;
   font-weight: 600;
 }
 
 .correct:hover {
-  opacity: 1;
   background-color: rgb(6, 240, 15);
+  opacity: 1;
 }
 
 .incorrect {
-  border: 3px solid rgb(255, 0, 0);
-  background-color: rgb(255, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color: red;
+  border: 3px solid red;
+  color: white;
   font-weight: 600;
 }
 
 .incorrect:hover {
+  background-color: red;
   opacity: 1;
-  background-color: rgb(255, 0, 0);
 }
 
 .timer-link {
+
   /* border: 5px solid red; */
+  color: white;
   display: flex;
   justify-content: space-around;
-  width: 80%;
   padding-top: 10px;
-  color: white;
+  width: 80%;
 }
 
 .feedback {

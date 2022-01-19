@@ -118,8 +118,7 @@ export class Question extends Component {
   assertionQuestions() {
     const { assertions } = this.state;
     const { assert } = this.props;
-    this.setState({ assertions: assertions + 1 });
-    assert(assertions);
+    this.setState({ assertions: assertions + 1 }, () => assert(assertions));
   }
 
   clickedAnswer(target) {

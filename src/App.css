@@ -4,7 +4,9 @@
 }
 
 body {
-  background-image: linear-gradient(to right, #7D77BF, #6557FF, #473DB3, #332C80, #060233);
+  background-image: linear-gradient (
+    to right , #7d77bf , #6557ff , #473db3 , #332c80 , #060233
+  );
 }
 
 .App {

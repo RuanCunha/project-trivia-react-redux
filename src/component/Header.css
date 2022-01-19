@@ -5,17 +5,16 @@
 }
 
 .header {
-  display: flex;
-  padding: 10px;
-  justify-content: space-around;
   align-items: center;
-  background-color: #17141D;
+  background-color: #17141d;
   color: beige;
-  /* border-radius: 25px; */
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
 }
 
 .title-game {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P' , cursive;
 }
 
 .image {
@@ -23,14 +22,15 @@
 }
 
 .name {
-  text-transform: uppercase;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .infos {
+
   /* border: 5px solid red; */
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 50%;
 }
