@@ -6,9 +6,16 @@
 
 .header {
   display: flex;
+  padding: 10px;
   justify-content: space-around;
-  border: 1px solid red;
   align-items: center;
+  background-color: #17141D;
+  color: beige;
+  border-radius: 25px;
+}
+
+.title-game {
+  font-family: 'Press Start 2P', cursive;
 }
 
 .image {

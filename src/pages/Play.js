@@ -6,6 +6,7 @@ import Header from '../component/Header';
 import Question from '../component/Question';
 import { fetchAPI, fetchToken } from '../services/servicesFetchAPI';
 import play from '../images/play.png';
+import './Play.css';
 
 class Play extends Component {
   constructor() {
@@ -63,15 +64,14 @@ class Play extends Component {
     console.log(questions);
     return (
       <div>
-        <h1>Página do Play</h1>
         <Header />
-        <Link to="/feedback">Feedback</Link>
-        { render && <Question
-          nextQuestion={ this.nextQuestion }
-          question={ questions[actualQuestion] }
-        /> }
-        <div>
-          <img className="play-img" src={ play } alt="" />
+        <div className="container-question-img">
+          { render && <Question
+            nextQuestion={ this.nextQuestion }
+            question={ questions[actualQuestion] }
+          /> }
+          <img className="play-img" src={ play } alt="cat" width="400" />
+          <Link to="/feedback" className="feedback">Feedback</Link>
         </div>
       </div>
     );

@@ -29,11 +29,15 @@ export class Header extends Component {
     const { hash } = this.state;
     const { name, score } = this.props;
     return (
-      <header className="header">
-        <img className="image" src={ `https://www.gravatar.com/avatar/${hash}` } data-testid="header-profile-picture" alt={ name } />
-        <p className="name" data-testid="header-player-name">{name}</p>
-        <p data-testid="header-score">{ score }</p>
-      </header>
+      <div>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+        <header className="header">
+          <img className="image" src={ `https://www.gravatar.com/avatar/${hash}` } data-testid="header-profile-picture" alt={ name } />
+          <h1 className="title-game">Black Cat Ask</h1>
+          <p className="name" data-testid="header-player-name">{name}</p>
+          <p data-testid="header-score">{ score }</p>
+        </header>
+      </div>
     );
   }
 }

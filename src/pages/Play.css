@@ -1,3 +1,8 @@
-.play-img {
-  
+.container-question-img {
+ border: 5px solid greenyellow;
+ display: flex;
+}
+
+.feedback {
+  color: aliceblue;
 }

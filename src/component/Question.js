@@ -152,13 +152,15 @@ export class Question extends Component {
     const { alternatives, disabledButton, seconds } = this.state;
     return (
       <div>
-        <p data-testid="question-category">{question.category}</p>
-        <p data-testid="question-text">{question.question}</p>
-        <div data-testid="answer-options">
+        <div className="container-question">
+          <p data-testid="question-category">{question.category}</p>
+          <p data-testid="question-text">{question.question}</p>
+        </div>
+        <div data-testid="answer-options" className="container-answer">
           {
             alternatives.map(([text, testid], index) => (
               <button
-                className="questions"
+                className="answers"
                 type="button"
                 key={ index }
                 name={ testid }
