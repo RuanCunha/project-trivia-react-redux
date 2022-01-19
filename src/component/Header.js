@@ -32,10 +32,12 @@ export class Header extends Component {
       <div>
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
         <header className="header">
-          <img className="image" src={ `https://www.gravatar.com/avatar/${hash}` } data-testid="header-profile-picture" alt={ name } />
-          <h1 className="title-game">Black Cat Ask</h1>
-          <p className="name" data-testid="header-player-name">{name}</p>
-          <p data-testid="header-score">{ score }</p>
+          <div className="infos">
+            <img className="image" src={ `https://www.gravatar.com/avatar/${hash}` } data-testid="header-profile-picture" alt={ name } />
+            <p className="name" data-testid="header-player-name">{name}</p>
+            <p data-testid="header-score">{ score }</p>
+          </div>
+          <h1 className="title-game">Black Cat Asks...</h1>
         </header>
       </div>
     );

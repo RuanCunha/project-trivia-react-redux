@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Header from '../component/Header';
 import Question from '../component/Question';
@@ -66,12 +65,12 @@ class Play extends Component {
       <div>
         <Header />
         <div className="container-question-img">
+          <div />
           { render && <Question
             nextQuestion={ this.nextQuestion }
             question={ questions[actualQuestion] }
           /> }
-          <img className="play-img" src={ play } alt="cat" width="400" />
-          <Link to="/feedback" className="feedback">Feedback</Link>
+          <div><img className="play-img" src={ play } alt="cat" width="400" /></div>
         </div>
       </div>
     );

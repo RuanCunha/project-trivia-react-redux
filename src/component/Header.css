@@ -11,7 +11,7 @@
   align-items: center;
   background-color: #17141D;
   color: beige;
-  border-radius: 25px;
+  /* border-radius: 25px; */
 }
 
 .title-game {
@@ -25,4 +25,12 @@
 .name {
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.infos {
+  /* border: 5px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
 }

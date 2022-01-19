@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { responseTokenAPI, loginAction } from '../redux/action';
 import { setLocalStorage } from '../services/localStorage';
 import { fetchToken } from '../services/servicesFetchAPI';
+import './Login.css';
+import playCat from '../images/play.png';
 
 class Login extends Component {
   constructor() {
@@ -49,8 +51,8 @@ class Login extends Component {
     const { name, email, isDisabled } = this.state;
     const { history } = this.props;
     return (
-      <div>
-        <form>
+      <div className="main-login">
+        <form className="form">
           <label htmlFor="name">
             Nome:
             <input
@@ -67,13 +69,14 @@ class Login extends Component {
             <input
               type="text"
               data-testid="input-gravatar-email"
-              placeholder="Email"
+              placeholder="example@email.com"
               name="email"
               value={ email }
               onChange={ this.handleChange }
             />
           </label>
           <button
+            className="btn-play"
             type="button"
             data-testid="btn-play"
             onClick={ this.handleClick }
@@ -82,6 +85,7 @@ class Login extends Component {
             Play
           </button>
           <button
+            className="btn-settings"
             type="button"
             data-testid="btn-settings"
             onClick={ () => history.push('/settings') }
@@ -89,6 +93,8 @@ class Login extends Component {
             Settings
           </button>
         </form>
+
+        <div className="cat"><img width="200px" src={ playCat } alt="login-cat" /></div>
       </div>
     );
   }

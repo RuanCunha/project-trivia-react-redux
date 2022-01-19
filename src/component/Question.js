@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { pointsPlayer, assertionsPlayer } from '../redux/action';
 import './Question.css';
 
@@ -30,6 +31,7 @@ export class Question extends Component {
     this.questionScore = this.questionScore.bind(this);
     this.changeDisplayVisible = this.changeDisplayVisible.bind(this);
     this.handleNextClick = this.handleNextClick.bind(this);
+    this.clickedAnswer = this.clickedAnswer.bind(this);
   }
 
   componentDidMount() {
@@ -120,12 +122,19 @@ export class Question extends Component {
     assert(assertions);
   }
 
+  clickedAnswer(target) {
+    target.style.backgroundColor = 'yellow';
+    console.log(target);
+  }
+
   handleClick({ target }) {
     this.changeColor();
     this.stopTime();
     if (target.name === correctAnswer) {
       this.questionScore();
       this.assertionQuestions();
+    } else {
+      this.clickedAnswer(target);
     }
     this.changeDisplayVisible();
   }
@@ -151,10 +160,16 @@ export class Question extends Component {
     const { question } = this.props;
     const { alternatives, disabledButton, seconds } = this.state;
     return (
-      <div>
+      <main className="main-container">
         <div className="container-question">
-          <p data-testid="question-category">{question.category}</p>
-          <p data-testid="question-text">{question.question}</p>
+          <p
+            className="question-category"
+            data-testid="question-category"
+          >
+            {question.category}
+
+          </p>
+          <p className="question-text" data-testid="question-text">{question.question}</p>
         </div>
         <div data-testid="answer-options" className="container-answer">
           {
@@ -174,7 +189,10 @@ export class Question extends Component {
             ))
           }
         </div>
-        { seconds }
+        <div className="timer-link">
+          <p>{ `Timer: ${seconds}` }</p>
+          <Link to="/feedback" className="feedback">Feedback</Link>
+        </div>
         <button
           className="next-button"
           type="button"
@@ -183,7 +201,7 @@ export class Question extends Component {
         >
           Next
         </button>
-      </div>
+      </main>
     );
   }
 }

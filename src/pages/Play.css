@@ -1,7 +1,19 @@
+/* body {
+  margin: 20px;
+  padding: 20px;
+} */
+
 .container-question-img {
- border: 5px solid greenyellow;
+ /* border: 5px solid greenyellow; */
  display: flex;
+ margin: 20px;
+ padding: 20px;
 }
+
+/* .container-question-img div {
+  width: 33%;
+  border: 5px solid blue;
+} */
 
 .feedback {
   color: aliceblue;
