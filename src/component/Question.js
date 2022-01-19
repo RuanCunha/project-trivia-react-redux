@@ -79,7 +79,7 @@ export class Question extends Component {
 
   // Lógica para mudar a cor da resposta:
   changeColor() {
-    const button = document.querySelectorAll('.questions');
+    const button = document.querySelectorAll('.answers');
     button.forEach((alternatives) => {
       alternatives.classList
         .toggle(alternatives.name === correctAnswer ? 'correct' : 'incorrect');

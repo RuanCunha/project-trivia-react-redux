@@ -1,4 +1,4 @@
-/* .next-button {
+.next-button {
   visibility: hidden;
 }
 
@@ -19,7 +19,7 @@
 .answers {
   padding: 20px;
   border-radius: 10px;
-} */
+}
 
 .correct {
   border: 3px solid rgb(6, 240, 15);
