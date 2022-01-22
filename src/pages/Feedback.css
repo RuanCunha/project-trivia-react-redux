@@ -1,7 +1,8 @@
 .main-feedback {
   background: white;
   border-radius: 20px;
-
+  display: flex;
+  justify-content: space-around;
   /* border: 5px solid blue;
   width: 70%;
   display: flex;
@@ -16,20 +17,41 @@
   width: 40%;
 }
 
-.feedback-text {
+.main-feedback span {
+  font-weight: 600;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.subcontainer {
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
   background: white;
   border-radius: 20px;
-  color: rgb(66, 0, 87);
-  font-size: 1.5em;
-  font-weight: 600;
   left: 50%;
-  padding: 40px;
+  padding: 40px 40px;
   position: absolute;
-  text-align: center;
-  text-transform: uppercase;
   top: 40%;
   transform: translate(-50%, -50%);
   width: 40%;
+}
+
+.subcontainer img {
+  width: 180px;
+  padding: 10px 300px;
+}
+
+.feedback-text {
+  color: rgb(66, 0, 87);
+  font-size: 2.5em;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .feedback-buttons-container {
@@ -44,19 +66,14 @@
 }
 
 .feedback-buttons {
-  background-color: purple;
+  background-color: var(--green);
   border-radius: 20px;
-  color: white;
+  color: black;
+  font-weight: 600;
   padding: 25px;
 }
 
-.container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
 .ranking-btn {
-  background-color: rgb(143, 143, 0);
+  background-color: var(--yellow);
   margin-left: 73%;
 }

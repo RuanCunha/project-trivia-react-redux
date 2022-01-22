@@ -30,14 +30,16 @@ export class Header extends Component {
     const { name, score } = this.props;
     return (
       <div>
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
         <header className="header">
+          <div className="title-div">
+            <h1 className="title-game">Black Cat Asks...</h1>
+          </div>
           <div className="infos">
             <img className="image" src={ `https://www.gravatar.com/avatar/${hash}` } data-testid="header-profile-picture" alt={ name } />
             <p className="name" data-testid="header-player-name">{name}</p>
             <p data-testid="header-score">{ score }</p>
           </div>
-          <h1 className="title-game">Black Cat Asks...</h1>
         </header>
       </div>
     );

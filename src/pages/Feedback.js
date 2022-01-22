@@ -14,11 +14,16 @@ export class Feedback extends Component {
       <div>
         <Header />
         <div className="container">
-          <p className="feedback-text" data-testid="feedback-text">
-            {assertions < assertionsNumber ? 'Could be better...' : 'Well Done!'}
-          </p>
+          <div className="subcontainer">
+            <p className="feedback-text" data-testid="feedback-text">
+              {assertions < assertionsNumber ? 'Could be better...' : 'Well Done!'}
+            </p>
+            { assertions < assertionsNumber ? <img src="https://media2.giphy.com/media/P53TSsopKicrm/giphy.gif?cid=790b7611669e76b4cb9e2f2c046dbb4aa4ccc5968da1d660&rid=giphy.gif&ct=g" alt="celebrate" /> : <img src="https://media1.giphy.com/media/IwAZ6dvvvaTtdI8SD5/giphy.gif?cid=790b7611e7266ed5cbeeaf4113843a7715de200d81b65b78&rid=giphy.gif&ct=g" alt="celebrate" /> }
+          </div>
           <div className="main-feedback">
+            <span>SCORE:</span>
             <p data-testid="feedback-total-score">{ score }</p>
+            <span>ASSERTIONS:</span>
             <p data-testid="feedback-total-question">{ assertions }</p>
           </div>
           <div className="feedback-buttons-container">

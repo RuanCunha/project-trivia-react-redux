@@ -1,12 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  --purple: #5768FF;
+  --blue: #2935A3;
+  --red: #FF383D;
+  --yellow: #FFD645;
+  --green: #33FF6A;
 }
 
 body {
-  background-image: linear-gradient (
-    to right , #7d77bf , #6557ff , #473db3 , #332c80 , #060233
-  );
+  background-image:
+  linear-gradient(to right , #7d77bf , #6557ff , #473db3 , #332c80 , #060233);
 }
 
 .App {

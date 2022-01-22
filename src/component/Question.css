@@ -45,7 +45,7 @@
 }
 
 .answers:hover {
-  background-color: yellow;
+  background-color: var(--yellow);
   opacity: 0.9;
 }
 
@@ -56,26 +56,26 @@
 }
 
 .correct {
-  background-color: rgb(6, 240, 15);
+  background-color: var(--green);
   border: 3px solid rgb(6, 240, 15);
   color: white;
   font-weight: 600;
 }
 
 .correct:hover {
-  background-color: rgb(6, 240, 15);
+  background-color: var(--green);
   opacity: 1;
 }
 
 .incorrect {
-  background-color: red;
+  background-color: var(--red);
   border: 3px solid red;
   color: white;
   font-weight: 600;
 }
 
 .incorrect:hover {
-  background-color: red;
+  background-color: var(--red);
   opacity: 1;
 }
 
