@@ -5,51 +5,52 @@
 }
 
 .header {
+  align-content: space-around;
   align-items: center;
   background-color: #17141d;
   color: beige;
   display: flex;
   justify-content: space-around;
   padding: 10px 175px 10px 40px;
-  align-content: space-around;
 }
 
 .title-game {
   color: white;
-  font-family: 'Fredoka One', cursive;
-  text-align: center;
+  font-family: Fredoka One , cursive;
   font-size: 42px;
+  text-align: center;
 }
 
-.title-game:-webkit-any-link {
-  text-decoration: none;
+.title-game:any-link {
   color: white;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .title-div {
-  flex-grow: 200;
   align-content: center;
+  flex-grow: 200;
   width: 80%;
 }
 
 .image {
   border-radius: 50%;
-  width: 70px;
-  margin-right: 25px;
   margin-left: 25px;
+  margin-right: 25px;
+  width: 70px;
+
   /* flex-grow: 1; */
 }
 
 .name {
+  flex-grow: 1;
   font-weight: 600;
   text-transform: uppercase;
-  flex-grow: 1;
 }
 
 .header-score {
   flex-grow: 1;
-  
+
 }
 
 .infos {
@@ -57,7 +58,7 @@
   /* border: 5px solid red; */
   align-items: center;
   display: flex;
+  flex-grow: 1;
   justify-content: space-between;
   width: 20%;
-  flex-grow: 1;
 }

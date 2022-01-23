@@ -3,6 +3,7 @@
   border-radius: 20px;
   display: flex;
   justify-content: space-around;
+
   /* border: 5px solid blue;
   width: 70%;
   display: flex;
@@ -28,13 +29,14 @@
 }
 
 .subcontainer {
+
   /* display: flex;
   justify-content: center;
   flex-direction: column; */
   background: white;
   border-radius: 20px;
   left: 50%;
-  padding: 40px 40px;
+  padding: 40px;
   position: absolute;
   top: 40%;
   transform: translate(-50%, -50%);
@@ -42,8 +44,8 @@
 }
 
 .subcontainer img {
-  width: 180px;
   padding: 10px 230px;
+  width: 180px;
 }
 
 .feedback-text {
