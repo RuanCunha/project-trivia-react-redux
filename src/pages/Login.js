@@ -5,7 +5,6 @@ import { responseTokenAPI, loginAction } from '../redux/action';
 import { setLocalStorage } from '../services/localStorage';
 import { fetchToken } from '../services/servicesFetchAPI';
 import './Login.css';
-import playCat from '../images/play.png';
 import blackCatLogo from '../images/Black-cat-asks-logo.png';
 
 class Login extends Component {
@@ -54,11 +53,11 @@ class Login extends Component {
     return (
       <div className="main-login">
         <form className="form">
-          <div><img width="200px" src={ blackCatLogo } alt="logo" /></div>
+          <div><img width="300px" src={ blackCatLogo } alt="logo" /></div>
           <label htmlFor="name">
             Nome:
             <input
-              autoComplete="off"
+              // autoComplete="off"
               type="text"
               data-testid="input-player-name"
               placeholder="Nome"
@@ -71,7 +70,7 @@ class Login extends Component {
           <label htmlFor="email">
             Email:
             <input
-              autoComplete="off"
+              // autoComplete="off"
               type="text"
               data-testid="input-gravatar-email"
               placeholder="example@email.com"
@@ -99,8 +98,6 @@ class Login extends Component {
             Settings
           </button>
         </form>
-
-        {/* <div className="cat"><img width="200px" src={ playCat } alt="login-cat" /></div> */}
       </div>
     );
   }
