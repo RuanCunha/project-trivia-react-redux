@@ -58,23 +58,23 @@ body {
   width: 40%;
 }
 
+.form label {
+  margin-top: 20px;
+  color: black;
+}
+
 .form input {
   background: none;
   border: 4px solid var(--blue);
   border-radius: 24px;
   color: black;
   display: block;
-  margin: 20px auto;
+  margin: 2px auto;
   outline: none;
   padding: 14px 10px;
   text-align: center;
   transition: 0.25s;
   width: 200px;
-}
-
-.form label {
-  color: black;
-  text-align: end;
 }
 
 .form input:focus {
@@ -112,8 +112,12 @@ body {
   background: var(--green);
 }
 
-.cat {
+.form img {
+  margin-bottom: 10px;
+}
+
+/* .cat {
   left: 28%;
   position: absolute;
   top: 55%;
-}
+} */

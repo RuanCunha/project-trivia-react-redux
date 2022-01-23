@@ -6,6 +6,7 @@ import { setLocalStorage } from '../services/localStorage';
 import { fetchToken } from '../services/servicesFetchAPI';
 import './Login.css';
 import playCat from '../images/play.png';
+import blackCatLogo from '../images/Black-cat-asks-logo.png';
 
 class Login extends Component {
   constructor() {
@@ -53,13 +54,16 @@ class Login extends Component {
     return (
       <div className="main-login">
         <form className="form">
+          <div><img width="200px" src={ blackCatLogo } alt="logo" /></div>
           <label htmlFor="name">
             Nome:
             <input
+              autoComplete="off"
               type="text"
               data-testid="input-player-name"
               placeholder="Nome"
               name="name"
+              id="name"
               value={ name }
               onChange={ this.handleChange }
             />
@@ -67,10 +71,12 @@ class Login extends Component {
           <label htmlFor="email">
             Email:
             <input
+              autoComplete="off"
               type="text"
               data-testid="input-gravatar-email"
               placeholder="example@email.com"
               name="email"
+              id="email"
               value={ email }
               onChange={ this.handleChange }
             />
@@ -94,7 +100,7 @@ class Login extends Component {
           </button>
         </form>
 
-        <div className="cat"><img width="200px" src={ playCat } alt="login-cat" /></div>
+        {/* <div className="cat"><img width="200px" src={ playCat } alt="login-cat" /></div> */}
       </div>
     );
   }
