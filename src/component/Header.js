@@ -3,6 +3,7 @@ import md5 from 'crypto-js/md5';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import './Header.css';
+import { NavLink } from 'react-router-dom';
 
 export class Header extends Component {
   constructor() {
@@ -33,7 +34,9 @@ export class Header extends Component {
         <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
         <header className="header">
           <div className="title-div">
-            <h1 className="title-game">Black Cat Asks...</h1>
+            <NavLink to="/" activeStyle={ { textDecoration: 'none' } }>
+              <h1 className="title-game" textDecoration="none">Black Cat Asks...</h1>
+            </NavLink>
           </div>
           <div className="infos">
             <img className="image" src={ `https://www.gravatar.com/avatar/${hash}` } data-testid="header-profile-picture" alt={ name } />

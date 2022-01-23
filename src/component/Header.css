@@ -15,9 +15,16 @@
 }
 
 .title-game {
+  color: white;
   font-family: 'Fredoka One', cursive;
   text-align: center;
   font-size: 42px;
+}
+
+.title-game:-webkit-any-link {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
 .title-div {
