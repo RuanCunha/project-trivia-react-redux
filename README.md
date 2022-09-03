@@ -43,7 +43,7 @@ O Projeto é um site de perguntas e respostas baseado no jogo Trivia, utilizando
 
 ## Funcionalidades
 
-- [ ]  Adicionar link no titulo
+- [X]  Adicionar link no titulo
 - [ ]  Adicionar Ranking
 - [ ]  Adicionar Settings
 
