@@ -1,4 +1,6 @@
-# Projeto Trybe Futebol Clube
+# Projeto Trivia
+
+[Página do Projeto](https://ruancunha.github.io/project-trivia-react-redux/)
 
 ## Contexto
 
@@ -39,7 +41,7 @@ O Projeto é um site de perguntas e respostas baseado no jogo Trivia, utilizando
 ## Apresentação
 
 - [X]  Adicionar instruções de instalação e execução local
-- [ ]  Hospedar e disponibilizar online
+- [X]  Hospedar e disponibilizar online
 
 ## Funcionalidades
 
@@ -51,6 +53,7 @@ O Projeto é um site de perguntas e respostas baseado no jogo Trivia, utilizando
 - [ ]  Zerar state local e global ao clicar "Play Again"
 - [ ]  Zerar state local e global ao clicar no titulo
 - [ ]  Corrigir problema onde a primeira resposta correta nao soma assertion
+- [x]  Corrigir plano de fundo
 
 ## Acessibilidade
 - [ ]  Tornar mobile first
