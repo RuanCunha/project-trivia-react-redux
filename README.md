@@ -1,6 +1,6 @@
 # Projeto Trivia
 
-[Página do Projeto](https://ruancunha.github.io/project-trivia-react-redux/)
+[Página do Projeto](https://ruancunha.github.io/project-trivia/)
 
 ## Contexto
 
